@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        :root{
+            --width: 500px
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: var(--width);
+            background-color: black;
+            color: white;
+        }
+
+        .nav a{ width: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav{
+            width: var(--width);
+            display: flex;
+            
+        
+        }
+
+        .main { 
+            width: 480px;
+            background-color: gray;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            width: var(--width);
+            background-color: black;
+            color: white;
+
+        }
+        .article{
+            background-color: white;
+            width: 95%;
+            border: 1px solid black;
+            margin: 9px;
+            margin-top: 0;
+            border-radius: 3px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Monday Time</h1>
+    </header>
+    <nav class="nav">
+        <a href="">New</a>
+        <a href="">Sport</a>
+        <a href="">Weather</a>
+    </nav>
+    <main class="main">
+        <h2>New Section</h2>
+        <article class="main__article--top article">
+            <p><strong>New Article</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore cum eligendi ipsa obcaecati sed
+                alias, voluptatum expedita omnis eos?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis aperiam labore cumque obcaecati
+                sit.</p>
+        </article>
+        <article class="main__article--buttom article">
+            <p><strong>New Article</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore cum eligendi ipsa obcaecati sed
+                alias, voluptatum expedita omnis eos?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis aperiam labore cumque obcaecati
+                sit.</p>
+        </article>
+    </main>
+    <footer class="footer">
+        &copy;Lorem ipsum dolor sit amet.
+    </footer>
+</body>
+
+</html>
